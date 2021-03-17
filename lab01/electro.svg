@@ -45,6 +45,31 @@
 
   <path d="M256 256 V270 V242 M256 256 H270 H242" stroke="black" fill="white"></path>
   <text x="254" y="250" font-size="16" text-anchor="middle" fill="red">(256, 256)</text>
-</svg>
 
+  <path d="M195 0 A 2 1, 110, 1, 0, 198 64 A2 1, 121, 1, 1, 200 121" stroke-width="10" stroke="black" fill="none"/>
+  <rect id="B" x="5" y="124" fill="none" stroke="black" stroke-width="8" width="383" height="259"/>
+  <rect x="6" y="235" fill="none" stroke="black" stroke-width="8" width="105" height="1"/>
+  <rect x="280" y="235" fill="none" stroke="black" stroke-width="8" width="105" height="1"/>
+  <path d="M174 325 A11 14, 0, 1, 0, 215 325" stroke-width="10" stroke="black" fill="none"/>
+
+  <path d="M480 360 A2 1, 11, 1, 0, 490 345 A2 1, 1, 1, 1, 510 335" stroke-width="10" stroke="black" fill="none"/>
+  <path d="M430 310 A2 1, 120, 1, 0, 430 330 A2 1, 85, 1, 1, 440 345" stroke-width="10" stroke="black" fill="none"/>
+
+  <polygon points="470,370 435,350 442,390" stroke-width="10" stroke="#000" fill="none" />
+
+  <path d="M460 365 l10 -20" stroke-width="8" stroke="#000" fill="none"/>
+  <path d="M448 360 l10 -20" stroke-width="8" stroke="#000" fill="none"/>
+
+  <path d="M278 432 A3 1, 1, 1, 1, 365 425 A3 1, 520, 1, 0, 439 390" stroke-width="10" stroke="black" fill="none"/>
+
+  <path d="M132 410 A50 20, -45, 0, 0, 120 480" stroke-width="8" stroke="#000" fill="none"/>
+  <path  d="M255 410 A50 20, 45, 0, 1, 265 480" stroke-width="8" stroke="#000" fill="none"/>
+
+  <path d="M140 384 A64 160, 0, 0, 0, 120 480" stroke-width="8" stroke="#000" fill="none"/>
+  <path  d="M245 384 A64 104, 0, 0, 1, 258 448" stroke-width="8" stroke="#000" fill="none"/>
+
+  <ellipse fill="none" stroke="#000" stroke-width="8" cx="245" cy="470" rx="22" ry="27"/>
+  <ellipse fill="none" stroke="#000" stroke-width="8" cx="145" cy="470" rx="22" ry="27"/>
+  <path d="M158 486 h70" stroke-width="8" stroke="#000" fill="none"/>
+</svg>
     
