@@ -59,23 +59,25 @@ https://www.oxxostudio.tw/articles/201501/svg-d3-13-csv.html
                 <li><a href="https://www.oxxostudio.tw/articles/201501/svg-d3-13-csv.html">SVG D3.js - CSV 數據處理</a></li>
             </ul>
         </div>
-        <img src="./c.png" width="650">
         <div id="div1"></div>
         <script src="./d3.v3.min.js"></script> 
 
         <script type="text/javascript"charset="utf-8">
+            function isDataCell(d, i) {
+                return i > 3 && (d === '0' || d === '1');
+            }
 
             d3.select("#div1")
                 .selectAll("img")
-                .data([0, 1, 2, 3])
+                .data([0, 1, 2, 3, 1])
                 .enter()
                 // img
                 .append("img")
                 .attr("src", function(d, i) { if (i % 2 == 0) return "./92.png"; else return "./93.png"; })
                 .attr("x", "0")
                 .attr("y", "0")
-                .attr("width",  function(d, i) { return (i + 1) * 60; })
-                .attr("height", function(d, i) { return (i + 1) * 60; });
+                .attr("width",  "100")
+                .attr("height", "100");
 
             d3.text("data.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
@@ -83,81 +85,23 @@ https://www.oxxostudio.tw/articles/201501/svg-d3-13-csv.html
                 var container = d3.select("body")
                     .append("table")
 
-                    .selectAll("tr")
-                        .data(parsedCSV).enter()
+                        .selectAll("tr")
+                        .data(parsedCSV)
+                        .enter()
                         .append("tr")
 
-                    .selectAll("td")
-                        .data(function(d) { return d; }).enter()
-                        .append("td")
-                        .text(function(d,index)
-                        {
-                            if (judge(d,index))
-                            {
-                                return "";
-                            }
-                            else
-                            {
-                                return d;
-                            }
-                        })
-                        .append("img")
-                        .attr("src",function(d,index)
-                        {
-                            if (judge(d,index))
-                            {
-                                url = "";
-                                if( d == "0" )
-                                {
-                                    url =  "./92.png"
-                                }
-                                else
-                                {
-                                    url =  "./93.png"
-                                }
-                                return url;
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        })
-                        .attr("width",function(d,index)
-                        {
-                            if (judge(d,index))
-                            {
-                                return 64;
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        })
-                        .attr("height",function(d,index)
-                        {
-                            if (judge(d,index))
-                            {
-                                return 64;
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        })
+                            .selectAll("td")
+                            .data(function(d) { return d; })
+                            .enter()
+                            .append("td")
+                            .text(function(d, i) { return isDataCell(d, i) ? "" : d; })
+
+                                .filter(function(d, i) { return isDataCell(d, i); })
+                                .append("img")
+                                .attr("src", function(d, i) { return (d === '0') ? "./93.png" : "./92.png"; })
+                                .attr("width",  "100")
+                                .attr("height", "100");
             });
-
-            function judge(d,index)
-            {
-                if(index >= 4 && ( d == "0" || d == "1" ))
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-
-            }
         </script>
     </body>
 </html>
