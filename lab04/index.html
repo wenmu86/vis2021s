@@ -90,8 +90,74 @@ https://www.oxxostudio.tw/articles/201501/svg-d3-13-csv.html
                     .selectAll("td")
                         .data(function(d) { return d; }).enter()
                         .append("td")
-                        .text(function(d) { return d; });
+                        .text(function(d,index)
+                        {
+                            if (judge(d,index))
+                            {
+                                return "";
+                            }
+                            else
+                            {
+                                return d;
+                            }
+                        })
+                        .append("img")
+                        .attr("src",function(d,index)
+                        {
+                            if (judge(d,index))
+                            {
+                                url = "";
+                                if( d == "0" )
+                                {
+                                    url =  "./92.png"
+                                }
+                                else
+                                {
+                                    url =  "./93.png"
+                                }
+                                return url;
+                            }
+                            else
+                            {
+                                return null;
+                            }
+                        })
+                        .attr("width",function(d,index)
+                        {
+                            if (judge(d,index))
+                            {
+                                return 64;
+                            }
+                            else
+                            {
+                                return null;
+                            }
+                        })
+                        .attr("height",function(d,index)
+                        {
+                            if (judge(d,index))
+                            {
+                                return 64;
+                            }
+                            else
+                            {
+                                return null;
+                            }
+                        })
             });
+
+            function judge(d,index)
+            {
+                if(index >= 4 && ( d == "0" || d == "1" ))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
         </script>
     </body>
 </html>
