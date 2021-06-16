@@ -1,6 +1,6 @@
-#rong1 {
+#path1622 {
     stroke-width: 12;
-    clip-path: url("#cp2");
+    clip-path: url("defs1416");
     stroke-dasharray: 250;
     animation: dash2-1 5s linear forwards;
 }
@@ -8,52 +8,228 @@
     0% {
             stroke-dashoffset: 250;
 }
-    25% {
+    6% {
             stroke-dashoffset: 0;
     }
 }
 
-#rong2 {
+#path1624 {
     stroke-width: 12;
-    clip-path: url("#cp2");
+    clip-path: url("#defs1416");
     stroke-dasharray: 250;
     animation: dash2-2 5s linear forwards;
 }
 @keyframes dash2-2 {
     0%,
-    25% {
+    6% {
             stroke-dashoffset: 250;
 }
-    50% {
+    12% {
             stroke-dashoffset: 0;
     }
 }
 
-#rong3 {
+#path1626 {
     stroke-width: 12;
-    clip-path: url("#cp2");
+    clip-path: url("#defs1416");
     stroke-dasharray: 250;
     animation: dash2-3 5s linear forwards;
 }
 @keyframes dash2-3 {
     0%,
-    50% {
+    12% {
             stroke-dashoffset: 250;
 }
-    75% {
+    18% {
             stroke-dashoffset: 0;
     }
 }
 
-#rong4 {
+#path1628 {
     stroke-width: 12;
-    clip-path: url("#cp2");
+    clip-path: url("#defs1416");
     stroke-dasharray: 250;
     animation: dash2-4 5s linear forwards;
 }
 @keyframes dash2-4 {
     0%,
-    75% {
+    18% {
+            stroke-dashoffset: 250;
+}
+    24% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1630 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-5 5s linear forwards;
+}
+@keyframes dash2-5 {
+    0%,
+    24% {
+            stroke-dashoffset: 250;
+}
+    30% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1632 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-6 5s linear forwards;
+}
+@keyframes dash2-6 {
+    0%,
+    30% {
+            stroke-dashoffset: 250;
+}
+    36% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1634 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-7 5s linear forwards;
+}
+@keyframes dash2-7 {
+    0%,
+    36% {
+            stroke-dashoffset: 250;
+}
+    42% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1636 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-8 5s linear forwards;
+}
+@keyframes dash2-8 {
+    0%,
+    42% {
+            stroke-dashoffset: 250;
+}
+    48% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1638 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-9 5s linear forwards;
+}
+@keyframes dash2-9 {
+    0%,
+    48% {
+            stroke-dashoffset: 250;
+}
+    54% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1640 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-10 5s linear forwards;
+}
+@keyframes dash2-10 {
+    0%,
+    54% {
+            stroke-dashoffset: 250;
+}
+    60% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1642 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-11 5s linear forwards;
+}
+@keyframes dash2-11 {
+    0%,
+    60% {
+            stroke-dashoffset: 250;
+}
+    66% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1644 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-12 5s linear forwards;
+}
+@keyframes dash2-12 {
+    0%,
+    66% {
+            stroke-dashoffset: 250;
+}
+    72% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1646 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-13 5s linear forwards;
+}
+@keyframes dash2-13 {
+    0%,
+    72% {
+            stroke-dashoffset: 250;
+}
+    78% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1648 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-14 5s linear forwards;
+}
+@keyframes dash2-14 {
+    0%,
+    78% {
+            stroke-dashoffset: 250;
+}
+    84% {
+            stroke-dashoffset: 0;
+    }
+}
+
+#path1650 {
+    stroke-width: 12;
+    clip-path: url("#defs1416");
+    stroke-dasharray: 250;
+    animation: dash2-15 5s linear forwards;
+}
+@keyframes dash2-15 {
+    0%,
+    84% {
             stroke-dashoffset: 250;
 }
     100% {
