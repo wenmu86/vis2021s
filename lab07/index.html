@@ -59,18 +59,16 @@
     Drag and Drop 展示區 (接收任何SVG)
     <hr>
     <p>Click on the square</p>
-    <div style="width:256px;height:256px;float:left;" src="./shao.svg" id="SHAO" class="characters"></div>
-    <div style="width:256px;height:256px;float:left;" src="./wen.svg" id="WEN" class="characters"></div>
-    <div style="width:256px;height:256px;float:left;" src="./qiang.svg" id="QIANG" class="characters"></div>
+    <div style="width:256px;height:256px;float:left;" src="./liu.svg" id="LIU" class="characters"></div>
+    <div style="width:256px;height:256px;float:left;" src="./rong.svg" id="RONG" class="characters"></div>
   </div>
 
   <script type="text/javascript">
       
     // Your beautiful D3 code will go here
       window.onload = () => {
-          loadSvgFromPath('./shao.svg', '#SHAO');
-          loadSvgFromPath('./wen.svg', '#WEN');
-          loadSvgFromPath('./qiang.svg', '#QIANG');
+          loadSvgFromPath('./liu.svg', '#LIU');
+          loadSvgFromPath('./rong.svg', '#RONG');
 
           document.getElementById('dropfile').addEventListener('dragover', (evt) => {
               evt.preventDefault()
